@@ -1,0 +1,100 @@
+/*https://www.iprofesional.com/economia/382477-asi-sera-la-doctrina-de-seguridad-de-milei-si-es-presidente*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: #ffffff;
+}
+
+h1{
+    background: black;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contenedor{
+    /* width: 90%;
+    max-width: 1000px; */
+    width: 1300px;
+    margin:1px 10px;
+    /* margin: 20px auto; */
+    overflow: hidden; /*se pone al padre de los 2 elementos que tienen el float left*/
+}
+.contenedor .main h2{
+    padding: 10px 15px;
+    margin-top: 30px;
+    margin-bottom:10px;
+}
+.contenedor .posts h3{
+   
+    margin-top: 30px;
+    margin-bottom:17px;
+}
+
+/***************************************************************************************************************************/
+
+header{
+    text-align: center ;
+}
+header nav ul{
+    width: 1000px;
+    overflow: hidden; /* ya que al poner float left en su hijo li desaparece el fondo blanco*/
+    list-style: none;
+}
+header nav ul li{
+    float:left;
+}
+header nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    color: #000;
+    
+}
+
+header nav ul li a:hover { 
+    color: #c3baba;
+}
+/***********************************************************************************************************/
+
+.main{
+    width: 700px;
+    float: left;
+}
+.main .imagen{
+    width: 500px;
+}
+article p{
+    margin-bottom: 10px;
+}
+/***********************************************************************************************************/
+
+
+aside{
+    width: 300px;
+    padding: 20px;
+    float: left;
+}
+aside .widget{
+    margin: 20px;
+}
+
+
+/*****************************************************************************************************************/
+
+footer{
+    width: 1000px; /* puede ser del 100%*/
+    clear:both; /*puede ir overflow:hidden, es para empezar en una nueva linea*/
+    background: #000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}

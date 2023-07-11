@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validación de Formulario con Javascript</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<main>
+		<form action="" class="formulario" id="formulario">
+
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+					
+				</div>
+				<p id="error_nombre"></p>
+			</div>
+
+			<!-- Grupo: Edad -->
+			<div class="formulario__grupo" id="grupo__edad">
+				<label for="edad" class="formulario__label">Edad</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="edad" id="edad" placeholder="18">
+					
+				</div>
+				<p id="error_edad"></p>
+			</div>
+
+			<!-- Grupo: Direccion -->
+			<div class="formulario__grupo" id="grupo__direccion">
+				<label for="direccion" class="formulario__label">Direccion</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Siempre Viva 123">
+					
+				</div>
+				<p id="error_direccion"></p>
+			</div>
+
+			<!-- Grupo: Ciudad -->
+			<div class="formulario__grupo" id="grupo__ciudad">
+				<label for="ciudad" class="formulario__label">Ciudad</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="ciudad" id="ciudad" placeholder="Rosario">
+					
+				</div>
+				<p id="error_ciudad"></p>
+			</div>
+
+			<!-- Grupo: postal -->
+			<div class="formulario__grupo" id="grupo__postal">
+				<label for="postal" class="formulario__label">Cod. Postal</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="postal" id="postal" placeholder="2000">
+					
+				</div>
+				<p id="error_postal"></p>
+			</div>
+
+			<!-- Grupo: dni -->
+			<div class="formulario__grupo" id="grupo__dni">
+				<label for="dni" class="formulario__label">DNI</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="dni" id="dni" placeholder="37123456">
+					
+				</div>
+				<p id="error_dni"></p>
+			</div>
+
+
+			<!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					
+				</div>
+				<p id="error_password"></p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					
+				</div>
+				<p id="error_password2"></p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					
+				</div>
+				<p id="error_correo"></p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+					
+				</div>
+				<p id="error_telefono"></p>
+			</div>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p id="error_form"></p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p id="formulario__mensaje-exito"></p>
+			</div>
+		</form>
+	</main>
+
+	<script src="formulario.js"></script>
+</body>
+</html>
